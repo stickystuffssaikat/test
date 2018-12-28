@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Animate SVG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style media="screen">
+
+      /* Animate */
+      #Oval {
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 1000;
+        animation: testanimate 10s ease-in-out 2s;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+      }
+      #check,
+      #line {
+        stroke-dashoffset: 1000;
+        stroke-dasharray: 1000;
+        animation: testanimate 10s ease-in-out 2s;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes testanimate {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <style type="text/css">
+              	.st0{fill:#FFFFFF;}
+              	.st1{fill:#161616;}
+              	.st2{
+              		fill: none;
+              		stroke: #1abc9c;
+              		stroke-width: 2;
+              		stroke-linecap: round;
+              		stroke-linejoin: round;
+              		stroke-miterlimit: 10;
+              	}
+              </style>
+              <g id="Group" transform="translate" stroke-width="2">
+              	<circle id="Oval" class="st0" stroke="#364f68" cx="25" cy="25" r="21"/>
+              	<polyline id="check" class="st2" stroke="#1abc9c" points="12.4,24.2 21.3,33.1 38,16.4 	"/>
+              </g>
+            </svg>
+          </div><!-- /.col-lg-4 -->
+
+
+          <div class="col-lg-4">
+
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st3{fill:none;stroke:#1abc9c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                  	.st4{fill:#FFFFFF;}
+                  	.st5{fill:#161616;}
+                  </style>
+                  <g id="Group" transform="translate" stroke-width="2">
+                  	<line id="line" class="st3" stroke="#1abc9c" x1="46" y1="46.1" x2="29.3" y2="29.4"/>
+                  	<circle id="Oval" class="st4" stroke="#364f68" cx="18.5" cy="18.5" r="15.5"/>
+                  </g>
+                </svg>
+
+          </div><!-- /.col-lg-4 -->
+
+
+          <div class="col-lg-4">
+            <svg version="1.1" id="Main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <style type="text/css">
+              	.ani-1{fill:#FFFFFF;}
+              	.ani-2{filter:url(#Adobe_OpacityMaskFilter);}
+              	.ani-3{fill:#515151;}
+              	.ani-4{mask:url(#Mask_1_);}
+              </style>
+              <g id="Animate">
+              	<g id="Pot">
+              		<rect x="14.9" y="14.9" class="ani-1" width="20.2" height="20.2"/>
+              		<path d="M34.6,15.4v19.2H15.4V15.4H34.6 M35.6,14.4H14.4v21.2h21.2V14.4L35.6,14.4z"/>
+              	</g>
+              	<defs>
+              		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="14.4" y="14.4" width="21.2" height="21.2">
+              			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+              		</filter>
+              	</defs>
+              	<mask maskUnits="userSpaceOnUse" x="14.4" y="14.4" width="21.2" height="21.2" id="Mask_1_">
+              		<g class="ani-2">
+              			<g id="Liquid">
+              				<path class="ani-3">
+                        <animate
+                        id="liquidity_1"
+                        attributeName="d"
+                        values="M35.6,19c0,0-4.1-2.6-10.6,0c-5,2-10.6,0-10.6,0v16.6h21.2V19z;
+                        M35.6,19c0,0-3.6,3-10.6,0c-7-3-10.6,0-10.6,0v16.6h21.2V19z"
+                        begin="0s;liquidity_2.end"
+                        dur="1.5s"
+                        />
+                        <animate
+                        id="liquidity_2"
+                        attributeName="d"
+                        values="M35.6,19c0,0-3.6,3-10.6,0c-7-3-10.6,0-10.6,0v16.6h21.2V19z;
+                        M35.6,19c0,0-4.1-2.6-10.6,0c-5,2-10.6,0-10.6,0v16.6h21.2V19z"
+                        begin="liquidity_1.end"
+                        dur="1.5s"
+                        />
+                      </path>
+              			</g>
+              		</g>
+              	</mask>
+              	<g id="Mask" class="ani-4">
+              		<rect x="14.4" y="14.4" width="21.2" height="21.2"/>
+              	</g>
+              </g>
+            </svg>
+          </div><!-- /.col-lg-4 -->
+
+
+        </div><!-- /.row -->
+
+        <!-- /END THE FEATURETTES -->
+
+      </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
